@@ -22,8 +22,8 @@
     <% @books.each do |book| %>
       <tr>
         <td><%= book.title %></td>
-        <td><%= book.auther %></td>
-        <td><%= book.publisher %></td>
+        <td><%= book.auther.name %></td>
+        <td><%= book.publisher.name %></td>
         <td><%= book.published %></td>
         <td><%= book.price %></td>
         <td><%= book.isbn %></td>
