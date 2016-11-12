@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Authers</h1>
+<h1>著者一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>著者名</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,9 +14,9 @@
     <% @authers.each do |auther| %>
       <tr>
         <td><%= auther.name %></td>
-        <td><%= link_to 'Show', auther %></td>
-        <td><%= link_to 'Edit', edit_auther_path(auther) %></td>
-        <td><%= link_to 'Destroy', auther, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', auther %></td>
+        <td><%= link_to '編集', edit_auther_path(auther) %></td>
+        <td><%= link_to '削除', auther, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Auther', new_auther_path %>
+<%= link_to '著者登録', new_auther_path %>

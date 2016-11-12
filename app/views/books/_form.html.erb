@@ -12,39 +12,39 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title, "書名" %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :auther_id %>
+    <%= f.label :auther_id, "著者" %>
     <%= f.collection_select( :auther_id, Auther.all, :id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :publisher_id %>
+    <%= f.label :publisher_id, "版元" %>
     <%= f.collection_select( :publisher_id, Publisher.all, :id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :published %><br>
+    <%= f.label :published, "発行日" %><br>
     <%= f.date_select :published %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
+    <%= f.label :price, "定価" %><br>
     <%= f.number_field :price %>
   </div>
   <div class="field">
-    <%= f.label :isbn %><br>
+    <%= f.label :isbn, "ISBN" %><br>
     <%= f.text_field :isbn %>
   </div>
   <div class="field">
-    <%= f.label :p_date %><br>
+    <%= f.label :p_date, "購入日" %><br>
     <%= f.date_select :p_date %>
   </div>
   <div class="field">
-    <%= f.label :p_price %><br>
+    <%= f.label :p_price, "購入価格" %><br>
     <%= f.number_field :p_price %>
   </div>
   <div class="field">
-    <%= f.label :read %><br>
+    <%= f.label :read, "読了" %><br>
     <%= f.check_box :read %>
   </div>
   <div class="actions">

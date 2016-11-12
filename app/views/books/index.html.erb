@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Books</h1>
+<h1>書籍一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Auther</th>
-      <th>Publisher</th>
-      <th>Published</th>
-      <th>Price</th>
-      <th>Isbn</th>
-      <th>P date</th>
-      <th>P price</th>
-      <th>Read</th>
+      <th>書名</th>
+      <th>著者</th>
+      <th>版元</th>
+      <th>発行日</th>
+      <th>定価</th>
+      <th>ISBN</th>
+      <th>購入日</th>
+      <th>購入価格</th>
+      <th>読了</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -29,10 +29,10 @@
         <td><%= book.isbn %></td>
         <td><%= book.p_date %></td>
         <td><%= book.p_price %></td>
-        <td><%= book.read %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= book.read ? '既読' : '未読' %></td>
+        <td><%= link_to '詳細', book %></td>
+        <td><%= link_to '編集', edit_book_path(book) %></td>
+        <td><%= link_to '削除', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -40,4 +40,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to '書籍登録', new_book_path %>

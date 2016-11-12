@@ -1,49 +1,49 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>書名:</strong>
   <%= @book.title %>
 </p>
 
 <p>
-  <strong>Auther:</strong>
+  <strong>著者:</strong>
   <%= @book.auther.name %>
 </p>
 
 <p>
-  <strong>Publisher:</strong>
+  <strong>版元:</strong>
   <%= @book.publisher.name %>
 </p>
 
 <p>
-  <strong>Published:</strong>
+  <strong>発行日:</strong>
   <%= @book.published %>
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>定価:</strong>
   <%= @book.price %>
 </p>
 
 <p>
-  <strong>Isbn:</strong>
+  <strong>ISBN:</strong>
   <%= @book.isbn %>
 </p>
 
 <p>
-  <strong>P date:</strong>
+  <strong>購入日:</strong>
   <%= @book.p_date %>
 </p>
 
 <p>
-  <strong>P price:</strong>
+  <strong>購入価格:</strong>
   <%= @book.p_price %>
 </p>
 
 <p>
-  <strong>Read:</strong>
-  <%= @book.read %>
+  <strong>読了:</strong>
+  <%= @book.read ? '既読' : '未読' %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to '編集', edit_book_path(@book) %> |
+<%= link_to '戻る', books_path %>
