@@ -187,8 +187,7 @@ end
 3. app/views/publishers/_form.html.erbの修正
 4. app/views/publishers/edit.html.erbの修正
 5. app/views/publishers/new.html.erbの修正
-
-- GitHubにPush
+6. GitHubにPush
 
 ```
   $ git add -A
@@ -252,8 +251,7 @@ end
 1. app/views/books/index.html.erb
 2. app/views/authers/index.html.erb
 3. app/views/publishers/index.html.erb
-
-- GitHubにPush
+4. GitHubにPush
 
 ```
   $ git add -A
@@ -261,5 +259,3 @@ end
   $ git status
   $ git push origin master
 ```
-
-
