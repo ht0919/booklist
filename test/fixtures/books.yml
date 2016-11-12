@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  auther_id: 
+  publisher_id: 
+  published: 2016-11-12
+  price: 1
+  isbn: MyString
+  p_date: 2016-11-12
+  p_price: 1
+  read: false
+
+two:
+  title: MyString
+  auther_id: 
+  publisher_id: 
+  published: 2016-11-12
+  price: 1
+  isbn: MyString
+  p_date: 2016-11-12
+  p_price: 1
+  read: false
