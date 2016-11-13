@@ -114,7 +114,6 @@ end
 ```
   $ git add -A
   $ git commit -m "Chg View New and Edit"
-  $ git status
   $ git push origin master
 ```
 
@@ -151,12 +150,12 @@ end
     <%= @book.publisher.name %>
   </p>
 ```
+
 - GitHubにPush
 
 ```
   $ git add -A
   $ git commit -m "Chg View Show Author,Publisher"
-  $ git status
   $ git push origin master
 ```
 
@@ -192,7 +191,6 @@ end
 ```
   $ git add -A
   $ git commit -m “localized for japanese”
-  $ git status
   $ git push origin master
 ```
 
@@ -215,7 +213,6 @@ end
 ```
   $ git add -A
   $ git commit -m "Chg read flag japanese"
-  $ git status
   $ git push origin master
 ```
 
@@ -242,7 +239,6 @@ end
 ```
   $ git add -A
   $ git commit -m "Add Association Auther and Publisher"
-  $ git status
   $ git push origin master
 ```
 
@@ -256,6 +252,25 @@ end
 ```
   $ git add -A
   $ git commit -m "Add Link to Auther and Publisher"
-  $ git status
   $ git push origin master
+```
+
+## ルートルーティングの設定
+
+- 　config/routes.rbの修正(5行目を追加)
+
+```
+Rails.application.routes.draw do
+  resources :books
+  resources :publishers
+  resources :authers
+  root 'books#index'
+```
+
+- GitHubにPush
+
+```
+$ git add -A
+$ git commit -m "Add root routing"
+$ git push origin master
 ```
